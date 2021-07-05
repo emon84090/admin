@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://kit.fontawesome.com/a240e50742.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" type="text/css" href="bootstrap/bootstrap.min.css">
+  <!-- Boxicons CSS -->
+  <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+  <!-- Boxicons CSS -->
+  <!-- google font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500;600&family=Raleway:wght@600;700;800;900&display=swap"
+    rel="stylesheet">
+  <!-- google font -->
+
+  <title>Admin</title>
+</head>
+
+<body>
+
+  <!-- sidebar strat-->
+  <div class="sidebar">
+    <div class="sidebar-all-content">
+      <div class="sidebar-close">
+        <i class='bx bx-x'></i>
+      </div>
+      <div class="side-bar-profile">
+        <div class="sidebar-profile-image">
+          <img src="images/profile.png" alt="" srcset="">
+        </div>
+        <div class="profile-name">
+          <p>emon</p>
+        </div>
+      </div>
+
+      <div class="sidebar-menu">
+        <ul>
+          <li><a href="">
+              <i class='bx bxs-dashboard'></i>dashboard</a>
+          </li>
+          <li class="dropdown-items-content"><a href="#">
+
+              <div class="menu-items">
+                <i class='bx bxs-file-blank'></i>pages
+              </div>
+              <div class="menu-icons">
+                <i class='dropdown-icon bx bxs-chevron-down'></i>
+              </div>
+
+            </a>
+            <ul class="item-dropdown">
+              <li><a href="">users</a></li>
+              <li><a href="">orders</a></li>
+              <li><a href="">items</a></li>
+
+            </ul>
+          </li>
+          <li><a href="">
+              <i class='bx bx-line-chart-down'></i>chart</a>
+          </li>
+          <li><a href="">
+              <i class='bx bx-table'></i>table</a>
+          </li>
+          <li class="dropdown-items-content"><a href="#">
+
+              <div class="menu-items">
+                <i class='bx bxs-paint'></i>themes
+              </div>
+              <div class="menu-icons">
+                <i class='dropdown-icon bx bxs-chevron-down'></i>
+              </div>
+
+            </a>
+            <ul class="item-dropdown themes">
+              <li><span class="themeitems" data-theme="normal-theme"></span></li>
+              <li><span class="themeitems" data-theme="theme-1"></span></li>
+              <li><span class="themeitems" data-theme="theme-2"></span></li>
+
+            </ul>
+          </li>
+          <li><a href="">
+              <i class='bx bxs-cog'></i>setting</a>
+          </li>
+          <li class="logout"><a href="">
+              <i class='bx bx-log-out'></i>logout</a>
+          </li>
+        </ul>
+
+      </div>
+    </div>
+  </div>
+
+  <!-- sidebar end-->
+
+  <!-- main body start-->
+  <div class="main-body">
+    <!-- navbar-start -->
+
+    <div class="main-navbar">
+      <div class="navbar-toggler" id="navbar-toggler">
+        <i class='bx bx-align-right'></i>
+
+      </div>
+      <div class="navbar-search-item">
+        <div class="search-box">
+          <input type="text" name="" id="" placeholder="search dashboard...">
+
+        </div>
+        <div class="search-btn">
+          <i class='bx bx-search-alt-2'></i>
+        </div>
+
+      </div>
+      <div class="navbar-tools">
+        <div class="notifications-box">
+          <i id="not" class='bx bxs-bell'></i>
+          <span class="notinumber">5</span>
+          <div class="notification-box-content" id="notibox">
+            <div class="all-noti" id="all">
+              <div class="notiication-image">
+                <i class='bx bxs-gift'></i>
+
+              </div>
+              <div class="notiication-text">
+                <p>Event Started</p>
+              </div>
+            </div>
+            <div class="all-noti">
+              <div class="notiication-image">
+                <i class='bx bx-dollar'></i>
+
+              </div>
+              <div class="notiication-text">
+                <p>received 30$ successfully from customers</p>
+              </div>
+            </div>
+            <div class="all-noti">
+              <div class="notiication-image">
+                <img src="images/profile.png" alt="" srcset="">
+
+              </div>
+              <div class="notiication-text">
+                <p>received 20$ from jahirul</p>
+              </div>
+            </div>
+            <div class="all-noti">
+              <div class="notiication-image">
+                <i class='bx bxs-cart'></i>
+
+              </div>
+              <div class="notiication-text">
+                <p>1000 product pending now</p>
+              </div>
+            </div>
+            <div class="all-noti">
+              <div class="notiication-image">
+                <img src="images/noti.jpg" alt="" srcset="">
+
+              </div>
+              <div class="notiication-text">
+                <p>received 40$ from jhon</p>
+              </div>
+            </div>
+
+          </div>
+        </div>
+        <div class="body-theme">
+          <label for="btheme">
+            <i class=''></i>
+          </label>
+          <input type="checkbox" name="" id="btheme" style="display:none">
+
+        </div>
+
+      </div>
+    </div>
+    <!-- navbar-end -->
+
+    <div class="body-all-content">
+      <div class="all-information mt-4">
+        <div class="container-fluid">
+          <div class="body-content-main-heading">
+            <h2>Dashboard</h2>
+          </div>
+          <div class="row">
+            <div class="col-lg-3 col-md-6 col-sm-12 mt-3">
+              <div class="information-box box-1">
+                <div class="information-text">
+                  <p>total users</p>
+                  <h2>1200</h2>
+                  <span class="">9 Jan,2021</span>
+
+                </div>
+                <div class="information-icons">
+                  <i class='bx bx-group'></i>
+                </div>
+              </div>
+
+            </div>
+            <div class="col-lg-3 col-md-6 col-sm-12 mt-3">
+              <div class="information-box box-2">
+                <div class="information-text">
+                  <p>today views</p>
+                  <h2>900</h2>
+                  <span class="">9 Jan,2021</span>
+
+                </div>
+                <div class="information-icons">
+                  <i class='bx bx-show-alt'></i>
+                </div>
+              </div>
+
+            </div>
+            <div class="col-lg-3 col-md-6 col-sm-12 mt-3">
+              <div class="information-box box-3">
+                <div class="information-text">
+                  <p>today sell</p>
+                  <h2>5000</h2>
+                  <span class="">9 Jan,2021</span>
+
+                </div>
+                <div class="information-icons">
+                  <i class='bx bx-cart-alt'></i>
+                </div>
+              </div>
+
+            </div>
+            <div class="col-lg-3 col-md-6 col-sm-12 mt-3">
+              <div class="information-box box-4">
+                <div class="information-text">
+                  <p>total earning</p>
+                  <h2>10K</h2>
+                  <span class="">9 Jan,2021</span>
+
+                </div>
+                <div class="information-icons">
+                  <i class='bx bx-dollar'></i>
+                </div>
+              </div>
+
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- recent-sell -->
+      <div class="container-fluid">
+        <div class="recent-sell-product py-5">
+          <div class="row">
+            <div class="col-lg-8 col-md-6 col-sm-12 pro-information">
+              <div class="recent-sell-text mt-4">
+                <h3>recent sales</h3>
+              </div>
+              <div class="recent-sell-table p-4">
+                
+                <div class="table-responsive mt-3">
+                  <table class="">
+                    <thead>
+                      <tr>
+                        <th>date</th>
+                        <th>customers</th>
+                        <th>sales</th>
+                        <th>total</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td>jan,2021</td>
+                        <td>emon</td>
+                        <td>delivered</td>
+                        <td>$204</td>
+                      </tr>
+                      <tr>
+                        <td>jan,2021</td>
+                        <td>arif</td>
+                        <td>delivered</td>
+                        <td>$300</td>
+                      </tr>
+                      <tr>
+                        <td>jan,2021</td>
+                        <td>manik</td>
+                        <td>pending</td>
+                        <td>$200</td>
+                      </tr>
+                      <tr>
+                        <td>jan,2021</td>
+                        <td>sumon</td>
+                        <td>delivered</td>
+                        <td>$150</td>
+                      </tr>
+                      
+
+                    </tbody>
+                  </table>
+                </div>
+                <div class="table-sell-button mt-4">
+                  <button>see all</button>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-4 col-md-6 col-sm-12 pro-information">
+              <div class="recent-sell-text mt-4">
+                <h3>top seling product</h3>
+              </div>
+              <div class="top-selling-product p-3">
+                <div class="product-all-information mt-3">
+                  <div class="product-information">
+                      <img src="images/laptop.jpg" alt="" srcset="">
+                      <span>laptop</span>
+                  </div>
+                  <div class="product-prize">
+                      <span>2k$</span>
+                  </div>
+                </div>
+                <div class="product-all-information mt-3">
+                  <div class="product-information">
+                      <img src="images/phone.jpg" alt="" srcset="">
+                      <span>phone</span>
+                  </div>
+                  <div class="product-prize">
+                      <span>5k$</span>
+                  </div>
+                </div>
+                <div class="product-all-information mt-3">
+                  <div class="product-information">
+                      <img src="images/shoes.jpg" alt="" srcset="">
+                      <span>shoe</span>
+                  </div>
+                  <div class="product-prize">
+                      <span>1k$</span>
+                  </div>
+                </div>
+                <div class="product-all-information mt-3">
+                  <div class="product-information">
+                      <img src="images/ipad.jpg" alt="" srcset="">
+                      <span>Ipad</span>
+                  </div>
+                  <div class="product-prize">
+                      <span>2.5k$</span>
+                  </div>
+                </div>
+                <div class="product-all-information mt-3">
+                  <div class="product-information">
+                      <img src="images/rshoe.jpg" alt="" srcset="">
+                      <span>running shoe</span>
+                  </div>
+                  <div class="product-prize">
+                      <span>.5k$</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- recent-sell -->
+
+    </div>
+
+
+    <!-- main body end-->
+
+
+
+
+    <script src="bootstrap/jquery-slim.min.js"></script>
+    <script src="bootstrap/popper.min.js"></script>
+    <script src="bootstrap/bootstrap.min.js"></script>
+    <script src="app.js"></script>
+
+
+</body>
+
+</html>
